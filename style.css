@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Kanit', sans-serif;
+}
+
+.banner-container {
+    padding: 100px 0;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.img {
+    width: 50%;
+}
+.img img {
+    width: 100%;
+}
+.banner-content {
+    width: 30%;
+}
+
+.banner-title {
+    font-size: 45px;
+}
+
+.banner-description {
+    width: 300px;
+    margin: 30px 0;
+    font-size: 17px;
+    font-weight: 400;
+    color: gray;
+}
+
+.btn {
+    padding: 20px 40px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 576px){
+    .banner-container {
+        flex-direction: column;
+    }
+    .banner-content, .img {
+        width: 100%;
+    }
+}
